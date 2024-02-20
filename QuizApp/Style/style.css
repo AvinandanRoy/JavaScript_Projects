@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #001e4d;
+}
+
+.container{
+    background: #fff;
+    max-width: 600px;
+    padding: 30px;
+    margin: 100px auto;
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.divider {
+    border: 2px solid green;
+    box-shadow: 2px 2px 2px blueviolet;
+}
+.quiz{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#answerButtons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#answerButtons button{
+    align-self: center;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border: 2px solid moccasin;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+h1{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+h2{
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: rgb(4, 116, 28);
+}
+
+#answerButtons button:hover{
+    background:#222 ;
+    color: #fff;
+}
+
+#nextButton{
+    align-self: center;
+    padding: 10px 40px;
+    cursor: pointer;
+    border: none;
+    background-color: green;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgb(90, 75, 75);
+}
+
+
+@media (max-width : 770px) {
+    .container{
+        margin: 30px auto 0px;
+        max-width: 100vw;
+        width: 100%;
+    }
+
+    .btn{
+        font-size: 16px;
+        font-weight: normal;
+    }
+}

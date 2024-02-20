@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Simple Quiz App</title>
+    <!-- css file link -->
+    <link rel="stylesheet" href="Style/style.css">
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/46eda60ee5.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Simple Quiz</h1>
+        <div class="divider"></div>
+        <div class="quiz">
+            <h2 id="question"><i class="fa-solid fa-circle-dot"></i>Question Goes here</h2>
+            <div id="answerButtons">
+                <button class="btn">Answer1</button>
+                <button class="btn">Answer2</button>
+                <button class="btn">Answer3</button>
+                <button class="btn">Answer4</button>
+            </div>
+            <button id="nextButton">Next</button>
+        </div>
+    </div>
+
+    <!-- Js adding -->
+    <script src="JS/script.js"></script>
 </body>
 </html>
