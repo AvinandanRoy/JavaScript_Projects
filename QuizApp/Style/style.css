@@ -41,11 +41,16 @@ body{
     width: 100%;
     cursor: pointer;
     border: 2px solid moccasin;
-    background-color: #fff;
     font-weight: 500;
     font-size: 18px;
     transition: all 0.3s;
 }
+
+.btn{
+    background: #fff;
+    color: black;
+}
+
 h1{
     font-size: 25px;
     font-weight: 900;
@@ -60,9 +65,12 @@ h2{
     color: rgb(4, 116, 28);
 }
 
-#answerButtons button:hover{
+#answerButtons button:hover:not([disabled]){
     background:#222 ;
     color: #fff;
+}
+#answerButtons button:disabled{
+    cursor: no-drop;
 }
 
 #nextButton{
@@ -75,6 +83,15 @@ h2{
     font-size: 18px;
     border-radius: 10px;
     box-shadow: 1px 1px 1px rgb(90, 75, 75);
+}
+.correct{
+    background: #9aeabc;
+    color: white;
+}
+
+.incorrect{
+    background: #ff9393;
+    color: white;
 }
 
 
