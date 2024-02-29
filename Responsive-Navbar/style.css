@@ -67,6 +67,7 @@
     right: 0;
    }
    #close {
+    display: block;
     position: absolute;
     top: 30px;
     left: 20px;
