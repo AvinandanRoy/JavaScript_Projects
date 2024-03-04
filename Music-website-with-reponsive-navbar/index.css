@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+}
+/* navbar */
+nav{
+    background: #270082;
+    color: #FFFFFF;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:60px;
+}
+.nav-item{
+    display: flex;
+}
+.bar-icon{
+    display: none;
+}
+.nav-item ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-logo{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* hero section */
+.hero{
+    background-image: url("./Images/unsplash_YrtFlrLo2DQ.png");
+    height: calc(100vh - 60px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* padding-top: 400px; */
+    text-align: center;
+}
+.hero-text h2{
+    font-size: 72px;
+    font-weight: 700;
+}
+.hero-text p{
+    font-size: 24px;
+}
+/* music section */
+.music-section{
+    background:#281154;
+    color: #FFFFFF;
+    padding-top: 25px;
+    text-align: center;
+}
+.head{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: 700;
+}
+.music-text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+.music-text h3 h4{
+    font-size: 24px;
+}
+
+.music-section-button{
+    padding: 15px;
+    align-self: center;
+    background: #DC0000;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 7px;
+    font-size: 29px;
+}
+.music-text p{
+    font-size: 14px;
+}
+.music-image{
+    position: relative;
+    top: 400px;
+    margin-top: -400px;
+    max-width: 950px;
+}
+.music-image img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+/* movie tv section */
+.movie-tv-section{
+    margin-top: 500px;
+}
+.movie-tv-section-image{
+    max-width: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.movie-tv-section-image img{
+    width: 100%;
+    
+}
+.movie-tv-section-text{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    text-align: center;
+}
+.movie-tv-section-start{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.movie-tv-section-text h5{
+    font-size: 24px;
+}
+.movie-tv-section-text p{
+    font-size: 18px;
+}
+.movie-btn{
+    align-self: center;
+    padding:10px 30px;
+    color: #FFFFFF;
+    background: #37008E;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+
+
+
+/* media query */
+@media (max-width : 786px) {
+    /* navbar */
+    .navbar{
+        height: 50px;
+        padding: 18px;
+    }
+    .nav-item ul{
+        display: none;
+    }
+    .nav-logo{
+        font-size: 10px;
+    }
+    .hero{
+        background-size: cover;
+    }
+    .bar-icon{
+        display: block;
+        font-size: 18px;
+    }
+    /* hero */
+    .hero{
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+    }
+    .hero-text{
+        gap: 20px;
+    }
+    .hero-text h2{
+        font-size: 48px;
+    }
+    .hero-text p{
+        font-size: 16px;
+    }
+    /* music section */
+    .music-text{
+        gap: 20px;
+    }
+    .music-section-button{
+        padding: 10px;
+        font-size: 20px;
+    }
+    .music-section{
+        padding:20px 10px 10px 10px;
+    }
+    .music-image {
+        position: initial;
+        margin-top: 0;
+    }
+    /* movie tv section */
+    .movie-tv-section{
+        margin-top: 40px;
+        padding: 10px;
+    }
+    .movie-tv-section-image{
+        display: flex;
+        justify-content: center;
+    }
+    .movie-tv-section-text {
+        text-align: justify;
+        padding: 10px;
+    }
+    .movie-tv-section-text h5{
+        text-align: center;
+    }
+    .movie-btn{
+        font-size: 16px;
+    }
+}
