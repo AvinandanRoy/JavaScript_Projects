@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avinandan Bank</title>
+    <!-- Tailwind CSS Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="md:w-[100vw] w-[100vw] md:p-0 p-[10px]">
+        <h1 class="text-4xl text-center mt-6 leading-[50px] font-semibold rounded-[20px] bg-green-200 py-10">
+            Wellcome to <span class="font-bold text-violet-600">Avinandan Bank</span>
+        </h1>
+        <main>
+            <section class="bg-blue-100 py-[100px] mt-[40px] rounded-[30px]">
+                <h3 class="text-center text-2xl font-bold ">Please Login</h3>
+                <div class="flex flex-col gap-5 mt-5 items-center">
+                    <input type="email" placeholder="Enter Your Email" class=" outline-none rounded-[10px] md:w-[350px] w-[250px] h-[50px] px-5" id="emailIdget">
+                    <input type="password" placeholder="Enter Your Password" class=" outline-none rounded-[10px] md:w-[350px] w-[250px] h-[50px] px-5" id="passwordGet">
+                </div>
+                <div class="flex items-center justify-center mt-[20px]">
+                    <button type="submit" class="px-6 py-3  text-md font-bold bg-indigo-300 rounded-[10px] text-green-800" id="submititBtn">Log In</button>
+                </div>
+            </section>
+        </main>
+    </header>
+
+
+
+    <script src="js/login.js"></script>
+</body>
+</html>
