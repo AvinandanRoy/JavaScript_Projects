@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <!-- Taiwind Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="Style/stle.css">
+</head>
+<body>
+    <!-- product section -->
+    <section class="md:w-[90vw] w-[100vw] bg-[#4632a8] mx-auto py-[30px] px-[30px] flex flex-col items-center">
+        <h1 class="text-2xl text-center text-white mt-[30px] font-bold border-[3px] w-[250px] flex items-center justify-center">Avinandan Online Shop</h1>
+        <div class="mt-[50px] flex flex-col gap-10">
+            <!-- product-1 -->
+            <div id="product" class="md:flex flex md:flex-row flex-col items-center justify-center md:gap-10 gap-5 border-[1px] border-blue-200 px-[10px] py-[20px]">
+                <div class="flex items-center gap-3">
+                    <img class="w-[80px]" src="images/product-1.png" alt="">
+                    <div>
+                        <h1 class="text-white text-lg font-bold">iPhone 11 128GB Black</h1>
+                        <h1 class="text-lg font-bold text-yellow-700">$<span id="p1Price">50000</span></h1>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5">
+                    <i id="p1Decrease" class="fa-solid fa-minus text-white text-2xl font-bold cursor-pointer"></i>
+                    <div class=" bg-amber-200 py-1 px-5 flex items-center gap-2 text-lg font-bold">
+                        <p></p>
+                        <h1 id="p1Quantity">0</h1>
+                    </div>
+                    <i id="p1Increase" class="fa-solid fa-plus text-white text-2xl font-bold cursor-pointer"></i>
+                    <div class="flex items-center gap-2 text-lg font-bold text-white">
+                        <p>$</p>
+                        <h3 id="p1TotalPrice" class="">0</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- product-2  -->
+            <!-- <div id="product" class="md:flex flex md:flex-row flex-col items-center justify-center md:gap-10 gap-5 border-[1px] border-blue-200 px-[10px] py-[20px]">
+                <div class="flex items-center gap-3">
+                    <img class="w-[80px]" src="images/product-2.png" alt="">
+                    <div>
+                        <h1 class="text-white text-lg font-bold">iPhone 11 128GB Black</h1>
+                        <h1 class="text-lg font-bold text-yellow-700">$<span id="p2Price">2500</span></h1>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5">
+                    <i class="fa-solid fa-minus text-white text-2xl font-bold cursor-pointer"></i>
+                    <div class=" bg-amber-200 py-1 px-5 flex items-center gap-2 text-lg font-bold">
+                        <p>$</p>
+                        <h1>0</h1>
+                    </div>
+                    <i class="fa-solid fa-plus text-white text-xl font-bold cursor-pointer"></i>
+                    <div class="flex items-center gap-2 text-lg font-bold text-white">
+                        <p>$</p>
+                        <h3 class="">0</h3>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Invoicement section  -->
+    <section class="md:w-[90vw] w-[100vw] md:py-[70px] py-[30px] bg-amber-200 mx-auto">
+        <div class="flex font-bold text-2xl items-center justify-center gap-8 text-green-700">
+            <div>
+                <h1>Subtotal:</h1>
+                <h1>Tax:</h1>
+                <h1>Total:</h1>
+            </div>
+            <div>
+                <h1 id="subtotal">0</h1>
+                <h1 id="tax">0</h1>
+                <h1 id="total">0</h1>
+            </div>
+        </div>
+        <div class="w-[100%] flex items-center justify-center mt-[40px]">
+            <button class="px-[20px] py-[10px] bg-green-500 rounded-[10px] text-lg font-bold text-white">Checkout</button>
+        </div>
+
+    </section>
+
+
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/46eda60ee5.js" crossorigin="anonymous"></script>
+    <!-- js -->
+    <script src="JS/script.js"></script>
+</body>
+</html>
